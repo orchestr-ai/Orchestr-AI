@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "agents"
+version = "0.1.0"
+description = "This are the DEMO Agents that we will be using for the Demo at ETHIndia 2024"
+authors = ["DhruvDave12 <davedhruv1201@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+fastapi = "^0.112.0"
+uvicorn = "^0.30.5"
+pydantic = "^2.8.2"
+pydantic-settings = "^2.4.0"
+loguru = "^0.7.2"
+langchain-openai = "^0.2.10"
+langchain = "^0.3.9"
+playwright = "^1.49.0"
+beautifulsoup4 = "^4.12.3"
+langchain-core = "^0.3.21"
+langchain-community = "^0.3.9"
+langchain-google-genai = "^2.0.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

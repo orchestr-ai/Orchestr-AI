@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  ethindia_agents:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    env_file:
+      - .env
+    ports:
+      - "6000:6000"
+    command: uvicorn main:app --reload --host 0.0.0.0 --port 6000
+    volumes:
+      - ./app:/app/
